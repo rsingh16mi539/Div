@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="B.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <style>
+  div {
+    background-color: gray;
+    width: 300px;
+    padding: 200px;
+  }
+</style>
+</head>
+<body>
+<button type="button" class="btn btn-primary bmd-btn-fab " id="navicon">
+  <i class="material-icons">grade</i>
+</button>
+ <nav class="shown" id="siteNav">
+  <div></div>
+</nav>
+
+</body>
+<script type="text/javascript">
+  var navicon = document.getElementById('navicon');
+  var navEl = document.getElementById('siteNav');
+  function toggleMenu(){
+    navEl.classList.toggle('hidden');
+  };
+  navicon.addEventListener("click", toggleMenu, false);
+</script>
+
+</html>

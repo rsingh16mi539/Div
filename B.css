@@ -1,2 +1,7 @@
-.hidden { display: none !important; }
-.shown { display: block; }
+.hidden { 
+  display: none !important; 
+}
+
+.shown { 
+  display: block; 
+}
